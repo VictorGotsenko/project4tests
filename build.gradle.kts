@@ -25,10 +25,22 @@ repositories {
 }
 
 dependencies {
-  implementation("org.springframework.boot:spring-boot-starter")
-  implementation("org.springframework.boot:spring-boot-starter-web")
-  implementation("org.springframework.boot:spring-boot-devtools")
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-devtools")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+
+    // DataBase section
+    implementation("com.zaxxer:HikariCP:6.3.0")
+    // for  driver class: org.postgresql.Driver
+    runtimeOnly("org.postgresql:postgresql")
+    implementation("org.postgresql:postgresql:42.7.7")
+
+
+
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 checkstyle {

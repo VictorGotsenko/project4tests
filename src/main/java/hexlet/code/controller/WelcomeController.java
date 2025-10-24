@@ -18,4 +18,15 @@ public class WelcomeController {
         return "Welcome to Spring";
     }
 
+    /**
+     *
+     * @return String
+     */
+    @GetMapping("/")
+    @ResponseStatus(HttpStatus.OK)
+    public String mainPage() {
+        return "Welcome to Main page";
+    }
+
+
 }
