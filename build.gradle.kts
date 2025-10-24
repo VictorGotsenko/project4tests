@@ -34,6 +34,8 @@ dependencies {
 
     // DataBase section
     implementation("com.zaxxer:HikariCP:6.3.0")
+    runtimeOnly("com.h2database:h2")
+    implementation("com.h2database:h2:") // database H2 & HikariCP
     // for  driver class: org.postgresql.Driver
     runtimeOnly("org.postgresql:postgresql")
     implementation("org.postgresql:postgresql:42.7.7")
