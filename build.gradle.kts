@@ -15,7 +15,6 @@ application {
     mainClass = "hexlet.code.AppApplication"
 }
 
-
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
