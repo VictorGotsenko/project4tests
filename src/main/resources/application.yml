@@ -1,17 +1,18 @@
 spring:
   profiles:
     default: dev
-    #active: prod
+    #active: dev
+    active: prod
   #main:
     #banner-mode: "off"
   output:
     ansi:
       enabled: always
-logging:
-  level:
-    root: WARN
+#logging:
+ # level:
+    #root: WARN
     #root: DEBUG
   jpa:
-    show-sql: true //показ sql-запросов
+    show-sql: true #показ sql-запросов
     hibernate:
       ddl-auto: update
